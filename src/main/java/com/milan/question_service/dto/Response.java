@@ -8,6 +8,6 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class Response {
     private Integer id;
-    private String responses;
+    private String response;
 }
 

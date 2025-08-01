@@ -58,7 +58,7 @@ public class QuestionService {
         int right = 0;
         for (Response response : responses) {
             Questions questions = questionsRepo.findById(response.getId()).get();
-            if (response.getResponses().equals(questions.getCorrectAnswer()))
+            if (response.getResponse().equals(questions.getCorrectAnswer()))
                 right++;
         }
         return right;
